@@ -1,0 +1,31 @@
+.header {
+    width: 300px;
+    height: 25px;
+    background-color: #5A68A5;
+    border-radius: 10px;
+}
+
+img {
+    width: 200px;
+    float: right;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    font-family: Tahoma, sans-serif;
+}
+
+li {
+    font-family: Tahoma, sans-serif;
+    list-style-type: square;
+}
+
+input {
+    width: 280px;
+}
