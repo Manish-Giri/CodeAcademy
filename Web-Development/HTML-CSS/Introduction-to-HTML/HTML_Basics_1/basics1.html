@@ -1,0 +1,110 @@
+<!--You're going places!
+What if you wanted to send the user to another part of your website, or another website altogether? You use hyperlinks, or links for short!
+
+<a href="http://www.codecademy.com">My Favorite Site!</a>
+First, there's an opening <a> tag and that tag has an attribute called href. The href value tells your link where you want it to go, in this case http://www.codecademy.com.
+Then you have a description of your link between your opening <a> and your closing </a> tags. This is what you will be able to click on.
+Finally, you have your closing </a> tag.
+Instructions
+In the body section, create a link. To do this, create an <a> tag. Point your link to a website by setting the value of the href attribute
+Add a description of your link
+Close the element with a closing tag </a>-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	    <a href = "http://www.github.com">My Github!</a>
+	</body>
+</html>
+
+<!--Adding images
+You can add images to your websites to make them look fancy.
+
+We use an image tag, like so: <img>. This tag is a bit different from the others. Instead of putting the content between the tags, you tell the tag where to get the picture using src. It's also different because there is no ending tag. It has / in the tag to close it: <img src="url" />.
+
+Check out the tag to the right—it adds a picture of a rubber duck to the page! (You can see it by clicking on the Preview button.)
+
+See the web address (or URL) after src=? It's "http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg". That tells the <img> tag where to get the picture from!
+
+Every image on the web has its own image URL. Simply right-click on an image and choose "Copy image URL." Paste that URL in quotes after src= to insert with your <img> tag.
+
+Instructions
+Add a second image below the first one. (Make sure it's before the closing <body> tag!)
+
+If you can't think of a good picture, use this ninja:
+
+http://s3.amazonaws.com/codecademy-blog/assets/ninja_zpsa5dbe37a.jpg-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" />
+		<img src="http://s3.amazonaws.com/codecademy-blog/assets/ninja_zpsa5dbe37a.jpg" />
+	</body>
+</html>
+
+<!--Click that image
+Good work! Now you know how to add links and images to your website. Why not make that image a link? For example:
+
+<a href="http://www.codecademy.com/">
+    <img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg"/>
+</a>
+First we open our <a> tag and point the href to http://www.codecademy.com/ again.
+But this time, instead of using text inside the <a> tag, we use an <img> tag.
+Finally, we have our closing </a> tag.
+Now when you click on the yellow duck, you will be taken to http://www.codecademy.com!
+
+Placing one HTML tag inside of another is called nesting.
+
+Instructions
+In the body section, create an <a> tag.
+Choose a website to point your link to, like <a href="http://www.codecademy.com">.
+Now create your <img> tag between your opening <a> tag and closing </a> tag. Don't forget the src!
+Finally, close your </a> tag after your <img> tag.-->
+	
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<a href = "http://www.yahoo.com">
+	    <img src = http://dl.dropbox.com/s/cmnlqdeyztuo4wl/yahoo.jpg?dl=0 />
+	</a>
+		<img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" />
+		<img src="http://s3.amazonaws.com/codecademy-blog/assets/ninja_zpsa5dbe37a.jpg" />
+	</body>
+</html>
+
+<!--Images and links
+Good work! Let's make sure you really understand images and links before we move on to the review.
+
+Instructions
+Between the <body> tags, add two images using the <img> tag. One should be a link; the other should not. The link can go anywhere you want.
+After your two images, create a link that's just a line of text. It can link anywhere you want.
+Check the Hint if you need help.-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<a href = "http://www.yahoo.com">
+	<img src = "http://dl.dropbox.com/s/cmnlqdeyztuo4wl/yahoo.jpg?dl=0" />
+	</a>
+	<img src ="http://dl.dropbox.com/s/cmnlqdeyztuo4wl/yahoo.jpg?dl=0"/>
+	
+	<a href="http://www.yahoo.com">YAHOO!</a>
+
+		
+		
+		
+	</body>
+</html>

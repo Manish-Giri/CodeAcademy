@@ -1,0 +1,250 @@
+<!--Why learn HTML?
+Every webpage you look at is written in a language called HTML. You can think of HTML as the skeleton that gives every webpage structure. 
+In this course, we'll use HTML to add paragraphs, headings, images and links to a webpage.
+
+In the editor to the right, there's a tab called test.html. This is the file we'll type our HTML into. See the code with the <>s? That's HTML! Like any language, it has its own special syntax (rules for communicating).
+
+When we press Save & Submit Code, the results tab will act like an Internet browser (e.g. Chrome, Firefox, Internet Explorer). A browser's job is to transform the code in test.html into a recognizable webpage! It knows how to lay out the page by following the HTML syntax.
+
+Instructions
+To the right, we have a test.html file.
+Change the text on line 2 (the bit between <strong> and </strong>) to anything you like!
+Hit Save & Submit Code, and you'll see how the test.html file would look in a browser. Did you see that? The <strong></strong> tags made our text bold!-->
+
+<!--<!DOCTYPE html>
+	<strong>I'm starting out to learn web development.</strong>
+    -->
+<!--HTML and CSS
+HTML stands for HyperText Markup Language. Hypertext means "text with links in it." Any time you click on a word that brings you to a new webpage, you've clicked on hypertext!
+
+A markup language is a programming language used to make text do more than just sit on a page: it can turn text into images, links, tables, lists, and much more. HTML is the markup language we'll be learning.
+
+What makes webpages pretty? That's CSS—Cascading Style Sheets. Think of it like skin and makeup that covers the bones of HTML. We'll learn HTML first, then worry about CSS in later courses.
+
+The first thing we should do is set up the skeleton of the page.
+
+a. Always put <!DOCTYPE html> on the first line. This tells the browser what language it's reading (in this case, HTML).
+b. Always put <html> on the next line. This starts the HTML document.
+c. Always put </html> on the last line. This ends the HTML document.
+
+Instructions
+Go ahead and put the three lines mentioned above into test.html, which is now blank.
+
+In between the second and last line (between the <html> and the </html>), feel free to write whatever message you like.	-->
+
+<!DOCTYPE html>
+<html>
+    <p>This is a message</p>
+</html>
+
+<!--Basic terminology
+To learn more HTML, we should learn how to talk about HTML. Already you have seen we use <>s a lot.
+
+Things inside <>s are called tags.
+Tags nearly always come in pairs: an opening tag and a closing tag.
+Example of opening tag: <html>
+Example of closing tag: </html>
+You can think of tags as being like parentheses: whenever you open one, you should close it. Tags also nest, so you should close them in the right order: the most recently opened tag should be the first one closed, like in the example below.
+
+<first tag><second tag>Some text!</second tag></first tag>
+The last exercise taught us how to set up our HTML file. Everything we do now will go between <html> and </html>.
+
+Practice makes perfect! One more time:
+
+Instructions
+Put in the <!DOCTYPE HTML> tag.
+Put in the <html> opening and closing tags.
+Between the <html> tags, write whatever you like.
+Press Save & Submit Code to see what you've written appear on the page!-->
+
+<!DOCTYPE HTML>
+<html>
+    <p> Another stupid ass message.</p>
+</html>
+<!--
+Make the head
+Everything in our HTML file will go between the opening <html> and closing </html> tags.
+
+There are always two parts to an HTML file: the head and the body. Let's start with the head.
+
+The head contains information about your HTML file, like its title. The title is what we see in the browser's title bar or page tab. For example the title of this page is "HTML Basics | Codecademy".
+
+Instructions
+Let's add a head and a title to our webpage. If you get stuck at any point, click "Stuck? Get a hint!" below for an example.
+
+Add an opening <head> tag and closing </head> tag.
+Between the <head> tags, add in an opening <title> tag and closing </title> tag.
+Between the <title> tags, write in a title for your page. For example, "My Webpage."
+Press "Save & Submit Code" to continue-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"Manish's webpage!"</title>
+</head>
+	
+	
+</html>
+
+<!--Paragraphs in the body
+Great job! To review, an HTML file has both a head and a body. The head is where you put information about your HTML file, like its title.
+
+The body is where you put your content, such as text, images, and links. The content in the body is what will be visible on the actual page.
+
+The body goes inside the <html> tags, right after the <head> tags, like this:
+
+<html>
+  <head>
+    <title>My Webpage</title>
+  </head>
+
+  <body>
+  </body>
+</html>
+Instructions
+Underneath the closing </head> tag, put an opening <body> tag and a closing </body> tag, like in the example above.
+Inside the body, create two paragraphs. Each paragraph starts with an opening <p> tag and ends with a closing </p> tag. We can write content in between the tags, like this:
+<body>
+    <p>Hello world!</p>
+</body>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"Manish's webpage!"</title>
+</head>
+<body>
+    <p>"This is first paragraph."</p>
+    <p>"This is second paragraph."</p>
+</body>
+	
+</html>
+
+<!--Paragraphs and headings
+We're definitely making good progress! We've learned when and why we use HTML. We've also learned how to:
+
+a. Set up an HTML file with tags
+b. Title the webpage (in the <head>)
+c. Create paragraphs (in the <body> with <p> tags)
+
+The next step is to give our paragraphs headings using heading tags. Let's start with the <h1> tag. The content between this tag will be the biggest!
+
+Instructions
+In the body section, create a heading. To do this, create an <h1> tag.
+Add content.
+Close the element with a closing tag </h1>. (Your content should now be between <h1> and </h1>.)
+Underneath the heading tags, create two paragraphs using <p> tags with whatever content you like.-->
+	
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Headings & Paragraphs
+		</title>
+		
+	</head>
+	<body>
+	<h1>
+	    This is a heading.
+	</h1>
+	<p>This is first paragraph.</p>
+	<p>This is second paragraph.</p>
+		
+		
+		
+		
+	</body>
+</html>	
+
+<!-- More about headings!
+HTML actually lets us have more than one heading size. There are six heading sizes, where <h1> is the boss and <h6> is puny!
+
+<h1> - The CEO
+<h2> - VP
+<h3> - Director
+<h4> - Middle management
+<h5> - Lowly assistant
+<h6> - Gets coffee for everyone
+Below we'll ask you to add headings of various sizes. Feel free to write whatever you like for the headings!
+
+Instructions
+Your code currently has one <h1> heading and two paragraphs.
+Add an <h3> heading before the second paragraph.
+Add an <h5> heading after the second paragraph, and then add a third paragraph after this heading. -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Headings & Paragraphs
+		</title>
+		
+	</head>
+	<body>
+	<h1>
+	    This is a heading.
+	</h1>
+	<p>This is first paragraph.</p>
+	<h3>
+	    
+	</h3>
+	<p>This is second paragraph.</p>
+	<h5>
+	    
+	</h5>	
+	<p>This is third paragraph.</p>	
+		
+		
+	</body>
+</html>
+
+<!--Using every heading
+Nice work!
+
+Given that there are six heading sizes altogether, we should make use of all six.
+
+Instructions
+Add three more headings to the code, making use of <h2>, <h4> and <h6>. Make sure to close all your tags!
+Under each heading, add a short paragraph. Dont forget paragraphs need opening and closing <p></p> tags!-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Headings & Paragraphs
+		</title>
+		
+	</head>
+	<body>
+	<h1>
+	    This is first heading.
+	</h1>
+	<p>This is first paragraph.</p>
+	<h2>
+	    This is second heading.
+	</h2>
+	<p>
+	    This is second paragpraph.
+	</p>
+	<h3>
+	    This is third heading.
+	</h3>
+	<p>This is third paragraph.</p>
+	<h4>
+	    This is fourth heading.
+	</h4>
+	<p> This is fourth paragraph.</p>
+	<h5>
+	    This is fifth heading.
+	</h5>	
+	<p>This is fifth paragraph.</p>	
+	<h6>
+	    This is sixth heading.
+	</h6>	
+	<p> This is sixth paragraph.</p>
+		
+	</body>
+</html>
