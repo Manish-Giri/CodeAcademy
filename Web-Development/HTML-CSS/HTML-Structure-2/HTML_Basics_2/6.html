@@ -1,0 +1,52 @@
+<!--Lists inside a list
+So you've made ordered lists and unordered lists. Top work!
+
+What if you have an ordered list, but each item in the ordered list also has an unordered list nested in it? Nested simply means 'inside' the list. 
+The editor has a small example of this. Hit save & submit to see what the result looks like!
+
+Remember: you've been nesting tags already. When you nest tags, the last tag you open is the first one you close. Here's an example:
+
+<ul><li>Tacos!</li></ul>
+Instructions
+On line 21, create an unordered list.
+Your unordered list should have two items: "Favorite Boys' Names" and "Favorite Girls' Names."
+Under each item of the unordered list, create an ordered list. Use the ordered list to specify your three favorite boys' names and three favorite girls' names.
+ Use the sample nested lists above as examples of how to do this.-->
+ 
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Nested lists</title>
+	</head>
+	<body>
+		<ol>
+			<li>Dad's interests
+				<ul>
+					<li>football</li>
+					<li>knitting</li>
+				</ul>
+			</li>
+			<li>Mom's interests
+				<ul>
+					<li>hating football</li>
+					<li>skydiving</li>
+				</ul>
+			</li>
+		</ol>
+		<ul>
+		    <li>Favorite Boys' Names</li>
+		        <ol>
+		            <li>Jack</li>
+		            <li>John</li>
+		            <li>James</li>
+		        </ol>
+		    <li>Favorite Girls' Names</li>
+		        <ol>
+		            <li>Christine</li>
+		            <li>Katie</li>
+		            <li>Stephanie</li>
+		        </ol>
+		</ul>
+		
+	</body>
+</html>
