@@ -1,0 +1,51 @@
+<!-- tyle that head!
+Your table is starting to look great, but it's still a little bland. 
+We've gone ahead and added some styling to the table to make it a bit easier to read. It's your job to add the finishing touches!
+
+Feel free to play around with any of the style attributes we added; you'll learn much more about these things later during the CSS courses.
+
+If you want to add more than one style, you just separate your styles with a semicolon, like so:
+
+<th style="font-size:12px; color:red"></th>
+Instructions
+Make the "Famous Monster" and "Birth Year" labels emphasized (i.e. make them italicized).
+Make the "Famous Monsters by Birth Year" title red. -->
+
+<html>
+    <head>
+        <title>Table Time</title>
+    </head>
+    
+    <body>
+        
+        <table style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th colspan="2" style="color:red">Famous Monsters by Birth Year</th>
+                </tr>
+                <tr style="border-bottom:1px solid black;">
+                    <th style="padding:5px;"><em>Famous Monster</em></th>
+                    <th style="padding:5px;border-left:1px solid black;"><em>Birth Year</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding:5px;">King Kong</td>
+                    <td style="padding:5px;border-left:1px solid black;">1933</td>     
+                </tr>
+                
+                <tr>
+                    <td style="padding:5px;">Dracula</td>
+                    <td style="padding:5px;border-left:1px solid black;">1897</td>
+                </tr>
+                
+                <tr>
+                    <td style="padding:5px;">Bride of Frankenstein</td>
+                    <td style="padding:5px;border-left:1px solid black;">1944</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+
+</html>

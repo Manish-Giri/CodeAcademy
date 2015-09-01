@@ -1,0 +1,51 @@
+<!-- Naming your table
+Our table is missing a title. We want to add a title row that goes all the way across the top.
+
+To do so, we need to use the colspan attribute for the <th> tag. By default, table cells take up 1 column. If we want a table cell to take up the space of 3 columns instead of 1, we can set the colspan attribute to 3.
+
+It looks like this:
+
+<th colspan="3">3 columns across!</th>
+Instructions
+Go to the Result view. We've added the title row for you, but it only spans 1 column right now.
+Make the column span 2 columns with the colspan attribute. Adding the attribute colspan="2" to a <th> tag should do the trick.
+Return to the Result view again. Our title spans 2 columns now! -->
+
+<html>
+    <head>
+        <title>Table Time</title>
+    </head>
+    
+    <body>
+        
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th colspan="2">Famous Monsters by Birth Year</th>
+                </tr>
+                <tr>
+                    <th>Famous Monster</th>
+                    <th>Birth Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>King Kong</td>
+                    <td>1933</td>     
+                </tr>
+                
+                <tr>
+                    <td>Dracula</td>
+                    <td>1897</td>
+                </tr>
+                
+                <tr>
+                    <td>Bride of Frankenstein</td>
+                    <td>1935</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </body>
+
+</html>
