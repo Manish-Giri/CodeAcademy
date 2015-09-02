@@ -1,0 +1,54 @@
+<!-- A font of knowledge
+We've also asked you to change the font-family of certain elements using CSS. You've seen us use the fonts Verdana, Courier, and Garamond. But how many fonts does CSS know?
+
+The answer is: it depends. Most computers will understand popular fonts like Verdana, Courier, and Garamond, but each individual computer has different fonts installed on it. The good news is that CSS has some built-in defaults meant to ensure your users see what you intend. They are:
+
+serif: A font with little decorative bits on the ends of the strokes that make up letters. Do a search on "serif" to see what we mean.
+
+sans-serif: A plain-looking font, like this one. It doesn't have the little doohickies on the ends of letters like a serif font does.
+
+cursive: A scripty font! It looks like cursive writing.
+
+We'll show you how to import your own fonts in a later course! This will help make sure the person viewing your page has all the fonts you want them to have.
+
+Instructions
+Set the font-family of the <h1> header to serif, the <h2> to sans-serif, and the <h3> to cursive. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<h1>I'm going to be a serif font when I grow up!</h1>
+		<h2>I'm going to be a sans-serif font.</h2>
+		<h3>I'm going to be in cursive!</h3>
+	</body>
+</html>
+
+<!-- Backup values
+You don't have to jump straight to a default value like cursive or sans-serif: you can tell CSS to try several, going from one to the next if the one you want isn't available.
+
+For example, if you write:
+
+p {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+CSS will first try to apply Tahoma to your paragraphs. If the user's computer doesn't have that font, it will try Verdana next, and if that doesn't work, it will show a default sans-serif font.
+
+Instructions
+In the stylesheet.css tab, add Times as an option before serif, Verdana as an option before sans-serif, and Vivaldi as an option before cursive. Check the Hint if you need help! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<h1>I'm going to be a serif font when I grow up!</h1>
+		<h2>I'm going to be a sans-serif font.</h2>
+		<h3>I'm going to be in cursive!</h3>
+	</body>
+</html>

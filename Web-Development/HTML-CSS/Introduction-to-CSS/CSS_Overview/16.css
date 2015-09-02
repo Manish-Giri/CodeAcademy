@@ -1,0 +1,33 @@
+/*Add your CSS below!*/
+h1{
+    font-family:serif;
+}
+h2{
+    font-family:sans-serif;
+}
+h3{
+    font-family:cursive;
+}
+
+/*17.css*/
+/*Add your CSS below!*/
+h1{
+    font-family:Times,serif;
+}
+h2{
+    font-family:Verdana,sans-serif;
+}
+h3{
+    font-family:Vivaldi,cursive;
+}
+
+
+/*19.css*/
+/*Add your CSS below!*/
+
+div{
+    background-color:#cc0000;
+    height:100px;
+    width:100px;
+}
+

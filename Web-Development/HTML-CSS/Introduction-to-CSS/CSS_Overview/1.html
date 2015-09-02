@@ -1,0 +1,59 @@
+<!-- Seeing is believing
+Take a look at the HTML file in index.html. Pretty standard, right? You know all this stuff: headers, paragraphs, images, lists, and tables. Look in the preview pane: no surprises there. (In fact, it's pretty ugly if you ask us.)
+
+The stylesheet.css tab (which we'll teach you how to use in this course) contains all the CSS styling information: where HTML elements should go, what color they should be, how big they should be, and more.
+
+We've commented out a crucial line in the index.html file. If you remove the comment (the --> <!-- in line 4 before the text, and the in line 6 after the text), you'll be able to see the magic CSS imparts. Don't delete any of the actual <link> tag!
+
+Instructions
+Remove the comment from around the <link> tag on line 4, then view the result in the preview pane to see what you'll soon be able to do with CSS! You can click Full Screen to see all the images. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<div id="header">
+			<div id="navbar">
+				<ul>
+					<li>Home</li>
+					<li>About Me</li>
+					<li>Plans for World Domination</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<h2>About Me</h2>
+		</div>
+		<div id="left">
+		<img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-main_zps26d178c5.jpg"/>
+		<p>I am the angriest puppy in the world. This has been scientifically proven in several clinical trials.</p>
+		</div>
+		<div id="right">
+		<table>
+			<th colspan="3">My Bros</th>
+			<tr>
+				<td><img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-1_zps5666b8e7.jpg"/></td>
+				<td><img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-2_zps1539e6b2.jpg"/></td>
+				<td><img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-3_zps4692eafa.png"/></td>
+			</tr>
+			<tr>
+				<td><img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-4_zps63ff5aa8.jpg"/></td>
+				<td><img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-5_zps0ee0d2c8.jpg"/></td>
+				<td><img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-6_zpsc4450a60.jpg"/></td>
+			</tr>
+			<tr>
+				<td><img id="bottom_left" src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-7_zps26e8a8d9.jpg"/></td>
+				<td><img src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-8_zps9a1469be.jpg"></td>
+				<td><img id="bottom_right" src="http://s3.amazonaws.com/codecademy-blog/assets/puppy-9_zps3bab7732.jpg"/></td>
+			</tr>
+		</table>
+		</div>
+		<div id="footer">
+			<div id="button">
+				<p>Send me an <span class="bold">e-mail</span>!</p>
+			</div>
+		</div>
+	</body>
+</html>
