@@ -1,0 +1,34 @@
+<!-- First child
+Another useful pseudo-class selector is first-child. It's used to apply styling to only the elements that are the first children of their parents. For instance:
+
+p:first-child {
+    color: red;
+}
+Would make all paragraphs that are the first children of their parent elements red.
+
+Instructions
+On the CSS tab, set the first paragraph's font-family to cursive. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<p>I'm the first child!</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>			
+		</div>
+	</body>
+</html>
+
+/*Add your CSS below!*/
+p:first-child{
+    font-family:cursive;
+}

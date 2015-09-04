@@ -1,0 +1,34 @@
+<!-- Multiple selectors
+Remember how to reach selectors nested inside others? If you have a paragraph inside a div that's inside another div, you can get to it like this:
+
+div div p {
+    /*Some CSS*/
+}
+This will style all paragraphs nested inside two divs and will leave all paragraphs that don't meet these criteria alone.
+
+Please note: If you have adjusted your browser's zoom, tests involving font-size and height will not work correctly. To remedy this, please type Command+0 or Ctrl+0 to reset your view.
+
+Instructions
+Give the paragraphs inside the list item tags a font size of 30px. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title></title>
+	</head>
+	<body>
+	<div>
+		<ul>
+			<li><p>Grab me!</p></li>
+			<li><p>Me, too!</p></li>
+		</ul>
+	</div>
+		<p>Don't grab me!</p>
+	</body>
+</html>
+
+<!-- /*Add your CSS below!*/
+li p{
+    font-size:30px;
+} -->
