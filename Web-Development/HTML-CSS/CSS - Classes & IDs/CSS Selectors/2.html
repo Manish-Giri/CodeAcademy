@@ -1,0 +1,39 @@
+<!-- Multiple Selectors
+As you've seen, it's possible to nest HTML elements inside one another, like so:
+
+<div>
+    <div>
+        <p>I like tacos!</p>
+So what if you want to grab <p>s that are inside two <div>s, and not all <p>s?
+
+You select those in the CSS tab like this:
+
+div div p {
+    /*CSS stuff!*/
+}
+Instructions
+On the CSS tab, select only the h3 header nested inside three <div>s and change its color to red. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<h3>I'm plain old font!</h3>
+		<div>
+			<h3>Me, too!</h3>
+			<div>
+				<h3>Me three!</h3>
+				<div>
+					<h3>Forget you guys. I'm about to be red!</h3>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!-- 
+div div div h3{
+    color:red;
+} -->
