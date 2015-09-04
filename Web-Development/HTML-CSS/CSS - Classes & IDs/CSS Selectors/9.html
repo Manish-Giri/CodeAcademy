@@ -1,0 +1,36 @@
+<!-- See it to believe it
+Excellent! You've got the hang of this, and you're starting to learn more about cascading.
+
+As we mentioned, certain selectors will "override" others if they have a greater specificity value. ul li p { is more specific CSS than just p {, so when CSS sees tags that are both <p> tags and happen to be inside unordered lists, it will apply the more specific styling (ul li p {) to the text inside the lists.
+
+There are two selectors that are even more specific than nested selectors like the ones above: classes and IDs. Check them out in the editor to the right.
+
+Instructions
+See how the classes and IDs alter the way the paragraph looks? (Note how the li p { CSS overrides the p { CSS, and the class .list_item overrides the li p { CSS.)
+
+Hit Save & Submit Code to learn how to use these new selectors! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Ultimate Text Challenge</title>
+	</head>
+	<body>
+		<p id="intro">Cascading with CSS</p>
+		<div>
+			<p>When you set a property of a selector like 'p' to a certain value, that value applies to <em>all</em> p tags.
+			If, however, you change that same property to a different value for a more specific instance of p,
+			that change will <em>override</em> the 'general rule'.
+			</p>
+			<ul>
+				<li><p>If you say p { font-family: Garamond}, all 'p's will have the font Garamond.</p></li>
+				<li><p class="list_item">BUT if you say li p {font-family: Verdana}, 'p's outside of 'li's will be
+					   in Garamond, and 'p's INSIDE 'li's will be in Verdana.
+				</p></li>
+				<li><p class="list_item">The more specific your selectors are, the higher importance CSS gives to the styling you apply!</p></li>
+			</ul>
+		</div>
+		<p id="summary">Greater specificity makes CSS prioritize that particular styling.</p>
+	</body>
+</html>

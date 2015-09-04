@@ -1,0 +1,61 @@
+<!-- Can you swing it?
+Good work! Let's try something a little more involved.
+
+Remember, you can reach an element that is a child of another element like this:
+
+div div p { /* Some CSS */ }
+where in this case, we'd be grabbing any <p> that is nested somewhere inside a <div> that is nested somewhere inside another <div>. If you want to grab direct children—that is, an element that is directly nested inside another element, with no elements in between—you can use the > symbol, like so:
+
+div > p { /* Some CSS */ }
+This only grabs <p>s that are nested directly inside of <div>s; it won't grab any paragraphs that are, say, nested inside lists that are in turn nested inside <div>s.
+
+Instructions
+Make all <p> tags have a font-family of Garamond. (Do NOT use the universal selector for this! There's a better way; see the Hint for help.)
+Make the introduction paragraph and the summary paragraph have a font-weight of bold (this is a new property for you, but it works just like the others you've learned).
+Make the synopsis paragraph have the color #7AC5CD.
+Make the paragraphs in the unordered list have the color #000000 and text-decoration underline. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Ultimate Text Challenge</title>
+	</head>
+	<body>
+		<p>Introduction: Cascading with CSS</p>
+		<div>
+			<p>Synopsis: When you set a property of a selector like 'p' to a certain value, that value applies to <em>all</em> p tags.
+			If, however, you change that same property to a different value for a more specific instance of p,
+			that change will <em>override</em> the 'general rule'.
+			</p>
+			<ul>
+				<li><p>If you say p { font-family: Garamond}, all 'p's will have the font Garamond.</p></li>
+				<li><p>BUT if you say li p {font-family: Verdana}, 'p's outside of 'li's will be
+					   in Garamond, and 'p's INSIDE 'li's will be in Verdana.
+				</p></li>
+				<li><p>The more specific your selectors are, the higher importance CSS gives to the styling you apply!</p></li>
+			</ul>
+		</div>
+		<p>Summary: Greater specificity makes CSS prioritize that particular styling.</p>
+	</body>
+</html>
+
+<!-- /*Add your CSS below!*/
+
+p{
+    font-family:Garamond;
+}
+
+body > p{
+    font-weight:bold;
+    
+}
+
+div > p{
+    color:#7ac5cd;
+}
+
+ul p{
+    color:#000000;
+    text-decoration:underline;
+} -->
