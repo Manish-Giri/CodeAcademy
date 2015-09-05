@@ -1,0 +1,21 @@
+<!-- Absolute positioning
+The first type of positioning is absolute positioning. When an element is set to position: absolute, it's then positioned in relation to the first parent element it has that doesn't have position: static. If there's no such element, the element with position: absolute gets positioned relative to <html>.
+
+To show you how this works, we've set the #outer div to have absolute positioning. This means that when you position the #inner div, it will be relative to #outer. (If #outer had the default positioning of static, then #inner would get positioned relative to the entire HTML document.)
+
+Instructions
+Try it out: set #inner's position to absolute and give it a margin-left of 20px.
+
+?
+ -->
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<div id="outer"><div id="inner"></div></div>
+	</body>
+</html>
