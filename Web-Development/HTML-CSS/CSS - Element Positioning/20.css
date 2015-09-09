@@ -1,0 +1,23 @@
+div {
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+#inner {
+	height: 75px;
+	width: 75px;
+	background-color: #547980;
+	/*Add your CSS here!*/
+	position:fixed;
+	margin-left:200px;
+}
+
+#outer {
+	height: 1500px;
+	width: 150px;
+	background-color: #45ADA8;
+	position: absolute;
+	margin-left: 100px;
+}
