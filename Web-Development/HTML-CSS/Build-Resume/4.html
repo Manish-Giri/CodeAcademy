@@ -1,0 +1,35 @@
+<!-- Fixing your header
+Great work!
+
+Now it's time to fix your header—literally—so it stays put on the page as people reading your resume scroll down.
+
+If you read the first exercise's CSS carefully, you'll see we've snuck in a little trick for you: the z-index property. You can think of the z-index as a measure of importance: the higher an element's z-index, the higher it will be "stacked" on the page. Giving your header a z-index of 1 while not giving any of the other elements a z-index ensures that your header will sit "on top of" your other elements and won't get stuck behind them.
+
+Instructions
+Give your #header a position of fixed and a z-index of 1. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title></title>
+	</head>
+	<body>
+	    <div id="header"></div>
+	    <div class="left"></div>
+	    <div class="right"></div>
+	    <div id="footer"></div>
+	</body>
+</html>
+
+<!-- div{
+    border-radius:5px;
+    height:100px;
+    width:200px;
+    background-color:lightblue;
+}
+
+#header{
+    position:fixed;
+    z-index:1;
+} -->
