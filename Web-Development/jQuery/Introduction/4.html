@@ -1,0 +1,47 @@
+<!--What is jQuery? jQuery is a library, or set of helpful add-ons, to the JavaScript programming language. It may seem counterintuitive to learn how to use a library before learning the actual language, but there are a few good reasons for this. It takes a while to become comfortable with JavaScript, and it's trickier to manipulate HTML elements directly with JavaScript than with jQuery. In order to help you build awesome websites faster, we're starting you off with jQuery. jQuery provides a simple interface for the underlying JavaScript. It's easier for many users to learn jQuery first, then dive into the nitty-gritty JavaScript details later. jQuery is much better at giving you immediate, visual results than regular JavaScript. By the end of this lesson, you'll have built your own interactive button! Instructions On the script.js tab, add the missing pieces on line 2 so that your jQuery code calls fadeOut on the div with the ID #notready.-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>What Say You?</title>
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border-radius: 5px;
+            text-align: center;
+            vertical-align: middle;
+            font-family: Arial, Verdana, sans-serif;
+            margin-right: 5px;
+        }
+        
+        #ready {
+            background-color: #008800;
+            color: white;
+        }
+        
+        #notready {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#notready').fadeOut(1000);
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="ready">I'm ready!</div>
+    <div id="notready">You'll never take me alive, jQuery!</div>
+</body>
+
+</html>
