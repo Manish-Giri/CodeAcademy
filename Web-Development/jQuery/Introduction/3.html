@@ -1,0 +1,38 @@
+<!--Changing Targets Don't be intimidated by the amount of code you're seeing—we'll go through it piece by piece to make sure you understand it thoroughly. Just like the CSS div refers to the HTML element
+<div>, the jQuery 'div' refers to the same HTML element
+    <div>. You can think of the element name passed to jQuery as identical to the CSS element, only wrapped in quotes. So, for instance, you could target anything of class button with $('.button').someAction As you'll remember, .button in your CSS file is how you'd target anything of class="button" in your HTML file. Instructions Put a selector (remember CSS selectors?) inside $() so instead it points to the ID #green.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery 3</title>
+    <style type="text/css">
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: #FF0000;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        
+        #green {
+            background-color: #008800;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#green').fadeOut(1000);
+        })
+
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <div id="green"></div>
+</body>
+
+</html>
