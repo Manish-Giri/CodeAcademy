@@ -1,0 +1,26 @@
+<!-- Electr(on)ic Slide
+Almost there! Now we just need to include an action in the body of our function. In this case, we'll make a header div for our HTML page slide into view.
+
+Between the {}s of our function(), we'll want to turn our div into a jQuery object so jQuery can manipulate it. Much like we use .ready() on $(document), we'll use the .slideDown() action on our div jQuery object.
+
+Inside .slideDown's parentheses, we'll want to tell it how quickly to slide down. Let's enter 'slow' (include the quotes).
+
+Instructions
+On line 2 in script.js, make 'div' into a jQuery object and call the .slideDown() action on it. Inside slideDown()'s parentheses, type 'slow' so jQuery knows how quickly to slide your div down. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <!--Add your script tag here.-->
+       <script type="text/javascript">
+       		$(document).ready(function(){
+$('div').slideDown('slow');
+
+});
+       </script>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
