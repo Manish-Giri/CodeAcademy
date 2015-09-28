@@ -1,0 +1,49 @@
+<!-- Get Yourself In...
+Great! Next, let's include our function keyword and two new actions together, mouseenter() and fadeTo().
+
+mouseenter() does what you might expect: it produces a change when your mouse enters a given HTML element. For example,
+
+$(document).ready(function() {
+    $('div').mouseenter(function() {
+        $('div').hide();
+    });
+});
+would hide every <div> on the page as soon as you mouse over one. (We'll find out how to affect just one <div> among many in the next lesson.) For now, we only have one <div>, so this setup is okay.
+
+Instead of hide(), however, we'll place fadeTo() inside mouseenter(). fadeTo() takes two arguments, or inputs, between its parentheses, separated by a comma: the speed at which to fade, and the opacity (or transparency) to fade to. For example,
+
+fadeTo('fast', 0.25);
+would quickly fade the target element to 25% of its original opacity, making it very light-colored.
+
+Instructions
+Using the examples above, make it so your 'div' fades to 1 (100%) opacity when your mouse enters the 'div'. Make the animation speed 'fast'. (Make sure to give fadeTo() its inputs in order—speed, then opacity.)
+
+Click Save & Submit Code, then slowly mouse over your 'div' to see the effect! -->
+
+<html>
+	<head>
+		<title>Button Magic</title>
+        <style type="text/css">
+        div {
+		    height: 60px;
+		    width: 100px;
+		    border-radius: 5px;
+		    background-color: #69D2E7;
+		    text-align: center;
+		    color: #FFFFFF;
+		    font-family: Verdana, Arial, Sans-Serif;
+		    opacity: 0.5;
+		}
+        </style>
+        <script type="text/javascript">
+        $(document).ready(function() {
+				$('div').mouseenter(function() {
+				$('div').fadeTo('fast', 1);
+			});
+		});
+		        </script>
+	</head>
+	<body>
+     <div><br/><strong>Click Me!</strong></div>   
+	</body>
+</html>
