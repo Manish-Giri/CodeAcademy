@@ -1,0 +1,40 @@
+<!-- Functions, Part II: Functions Explained
+A function is made up of three parts: the function keyword, any inputs that function takes (they go between the ()s and are separated by commas if there are more than one), and whatever actions the function should perform (these go between the {}s). The general form is:
+
+function(input1, input2, etc) {
+    Do a thing
+    Do another thing
+    Do yet another thing!
+}
+One of the nice things about jQuery is that you can give a function just about anything as an input—even another function! That's why .ready() can take function between its parentheses; it's taking a function as input.
+
+(If you're interested, you can learn more about functions in the JavaScript track.)
+
+Instructions
+Check out the code in script.js. It includes a new jQuery action, .click(), that we'll learn more about soon!
+
+See how we pass functions to both .ready() and .click() as inputs? When you're ready, click Save & Submit Code, then click on the orange div in the Result tab to see the fadeOut() effect. --><!DOCTYPE html>
+<html>
+    <head>
+		<title>Result</title>
+        <style type="text/css">
+        	div {
+			    height: 100px;
+			    width: 100px;
+			    background-color: #FA6900;
+			    border-radius: 5px;
+			}
+        </style>
+        <script type='text/javascript'>
+
+        $(document).ready(function() {
+    $('div').click(function() {
+        $('div').fadeOut('slow');
+    });
+});
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
