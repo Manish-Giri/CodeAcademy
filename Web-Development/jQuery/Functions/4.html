@@ -1,0 +1,31 @@
+<!-- $p vs $('p')
+You probably noticed that we used both $ and $() in the last exercise:
+
+var $p = $('p');
+There's a subtle difference between the two.
+
+$p is just a variable name. There is no magic associated with the $ in $p; it's just a convention for saying, "hey, this variable contains a jQuery object." We could call $p anything we want: $paragraph, paragraph, space_cows, whatever! It's just helpful for people reading our code to see $p, since this is a concise way of saying "hey, there's a 'p' jQuery object in here."
+
+$(), on the other hand, is magic. This is the function in disguise that creates jQuery objects. If you're making a jQuery object, you gotta use it!
+
+Instructions
+Remember when we told you to ignore the paragraph = in the last lesson? Well, now you know what it does! (You also know that it should have been $p.)
+
+Create a variable $div, and assign it to a div jQuery object using =. No need to use $(document).ready() or any additional code! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+        <script type='text/javascript' src='script.js'>
+        // Write your jQuery code below!
+
+   $div = $('div');
+    
+
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
