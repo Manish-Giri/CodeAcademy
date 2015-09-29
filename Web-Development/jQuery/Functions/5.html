@@ -1,0 +1,35 @@
+<!-- Using Functions to Select HTML Elements
+Now that you know more about how functions work, you understand that when we have something like
+
+$(document).ready(function() {
+    $('div').hide();
+});
+we're passing .ready() a function (which itself takes no inputs; that's why its () are empty) and that function's job is to .hide() the div jQuery object.
+
+Instructions
+Give .ready() a function(){} as an input. Inside your function's {}s, call fadeIn('slow') on the (currently invisible) div to bring it into view. That's right, there's a fade in, as well! -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Fade In!</title>
+		<style type="text/css">
+		div {
+		    height: 100px;
+		    width: 100px;
+		    background-color: #F38630;
+		    display: none;
+		    border-radius: 5px;
+		}
+		</style>
+        <script type='text/javascript' src='script.js'>
+        $(document).ready(function() {
+			$('div').fadeIn('slow');
+		});
+		
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
