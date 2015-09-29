@@ -1,0 +1,49 @@
+<!-- Variables
+Variables are a place for us to store information for use at a later time. Variables can hold any type of information you work with, so just think of them as containers.
+
+The single = sign is used to assign values. For instance, in jQuery, you can write
+
+var lucky = 7;
+var name = "Codecademy";
+var $p = $('p');
+Our first variable contains a number, 7, while the second variable contains some text, "Codecademy". Our 3rd variable stores the result of a jQuery selector $('p') in the variable $p . As you can see, this is just a handy way to save this information for later.
+
+Why would we do this? Well, up until now we haven't had to modify anything more than once. If we wanted to change the webpage based on new information, we would need to store that information in variables. Maybe you want to create a loading page and have it vanish as you receive that information. It'd be a good idea to use variables.
+
+Instructions
+Check out the preview window. All looks well and good, except for #4—that's nonsense!
+
+Create a variable called $target in script.js and use the = sign to assign it to the jQuery selector that represents #4 in the ordered list. When you run your code, it should fade away!
+
+You're going to need your CSS knowledge for this one and there is more then one way to achieve this. Check the Hint if you need a reminder! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simplify, Simplify</title>
+        <script type='text/javascript'>
+
+        		// Write your jQuery code on line 3!
+				$(document).ready(function() {
+				    var $target = $('li:last-child');
+				    $target.fadeOut('fast');
+				});
+        </script>
+	</head>
+	<body>
+        <div> Remember!
+            <ul>
+                <li>
+                    <ol>
+                        <li>Start with the function keyword</li>
+                        <li>Inputs go between ()</li>
+                        <li>Actions go between {}</li>
+                        <li>jQuery is for chumps!</li>
+                    </ol>
+                </li>
+                <li>Inputs are separated by commas.</li>
+                <li>Inputs can include other functions!</li>
+            </ul>
+        </div>   
+	</body>
+</html>
