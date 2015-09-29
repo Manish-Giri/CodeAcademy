@@ -1,0 +1,37 @@
+<!-- Functions, Part I: $(document).ready
+Functions are the basic unit of action in jQuery. The main entry point of most jQuery applications is a block of code that looks like this:
+
+$(document).ready(function() {
+    Do something
+});
+Let's go through it bit by bit.
+
+$(document) is a jQuery object. The $() is actually a function in disguise; it turns the document into a jQuery object.
+.ready() is a type of function; you can think of it as sort of a helper that runs the code inside its parentheses as soon as the HTML document is ready.
+function(){} is the action that .ready() will perform as soon as the HTML document is loaded. (In the above example, the Do something placeholder is where those actions would go.)
+Instructions
+Practice makes perfect! Set up your jQuery code in the script.js tab with $(document).ready() and pass it a function that will immediately hide the orange div on the Result tab. (You can use the jQuery .hide() effect to do this.) -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Result</title>
+        <style type="text/css">
+        	div {
+			    height: 100px;
+			    width: 100px;
+			    background-color: #FA6900;
+			    border-radius: 5px;
+			}
+        </style>
+        <script type='text/javascript'>
+
+        	$(document).ready(function() {
+				$('div').hide();
+		});
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
