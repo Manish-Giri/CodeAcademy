@@ -1,0 +1,42 @@
+<!-- Selecting by ID
+If we can select by class, it follows that we can also select by ID. We do this by putting the ID name (in quotes) inside $(). Just as we need the . for classes, we need the # for IDs. We could target id="header" like so:
+
+$('#header');
+The semicolon at the end is important—it's how jQuery knows we're done giving it a command. For now, a good rule of thumb is that you should put semicolons at the end of any line that does not end with an open {. (The editor will try to help you out with your semicolon placement, so pay attention to its warnings.) Examples of correct and incorrect semicolon use are in the Hint.
+
+Instructions
+Update your jQuery code so that it only .fadeOut()s the div with the ID #blue. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Vanishing Act</title>
+        <style type="text/css">
+		div {
+		    height: 100px;
+		    width: 100px;
+		    display: inline-block;
+		    background-color: #F38630;
+		    border-radius: 5px;
+		}
+
+		#blue {
+		    background-color: #A7DBD8;
+		}
+		</style>
+        <script type='text/javascript'>
+        $(document).ready(function() {
+		    $('button').click(function() {
+		        $('#blue').fadeOut('slow');
+		    });
+		});
+        </script>
+	</head>
+	<body>
+        <div id="blue"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <br/><button>Click Me!</button>
+	</body>
+</html>
