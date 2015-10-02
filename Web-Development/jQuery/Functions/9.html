@@ -1,0 +1,45 @@
+<!-- 'this' is Important!
+In the last lesson, we had some code that looked like this:
+
+$(document).ready(function() {
+    $('div').mouseenter(function() {
+        $('div').hide();
+    });
+});
+The second line is good: this tells us that when we mouse into a div, we should take a certain action. However, $('div').hide(); won't just hide the div you mouse into; it will hide all the divs on the page. How can we tell jQuery we only want to affect this particular div?
+
+With this, of course!
+
+The this keyword refers to the jQuery object you're currently doing something with. Its complete rules are a little tricky, but the important thing to understand is if you use an event handler on an element—that's the fancy name for actions like .click() and .mouseenter(), since they handle jQuery events—you can call the actual event that occurs (such as fadeOut()) on $(this), and the event will only affect the element you're currently doing something with (for example, clicking on or mousing over).
+
+Instructions
+Check out the code in script.js. Instead of using fadeOut() on all 'div's, we're just using it on this div, where this refers to the div you're clicking on. Click Save & Submit Code, then click on your divs one by one to see it work! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Check 'this' Out!</title>
+		<style type="text/css">
+		div {
+			    height: 100px;
+			    width: 100px;
+			    background-color: #4ECDC4;
+			    border-radius: 5px;
+			    display: inline-block;
+			}
+		</style>
+        <script type='text/javascript'>
+        $(document).ready(function() {
+			    $('div').click(function() {
+			        $(this).fadeOut('slow');
+			    });
+			});
+        </script>
+	</head>
+	<body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+	</body>
+</html> 
