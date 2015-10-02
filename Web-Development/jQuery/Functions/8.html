@@ -1,0 +1,53 @@
+<!-- Flexible Selections
+Anything you can target with CSS, you can modify with jQuery. For example, we can apply a fadeTo() to a p selector like this:
+
+$('p').fadeTo('slow', 0);
+We can apply a fadeTo() to an li selector like this:
+
+$('li').fadeTo('slow', 0);
+We can apply a fadeTo() to both the p and li selectors like this:
+
+$('p, li').fadeTo('slow', 0);
+This is called a compound selector.
+
+Let's use a compound selector to apply a fadeTo() to both the .pink and .red selectors.
+
+Instructions
+Let's use a compound selector to apply a fadeTo() to both the .pink and .red selectors. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <style type="text/css">
+        	div {
+			    height: 50px;
+			    width: 50px;
+			    border-radius: 100%;
+			    background-color: #FF9C5B;
+			    display: inline-block;
+			}
+
+			.red {
+			    background-color: #E84A5F;
+			}
+
+			.pink {
+			    background-color: #FF847C;
+			}
+        </style>
+        <script type='text/javascript' src='script.js'>
+        $(document).ready(function() {
+			$('.red, .pink').fadeTo('slow', 0);
+
+		});
+        </script>
+	</head>
+	<body>
+        <div class='red'></div>
+        <div></div>
+        <div class='pink'></div>
+        <div></div>
+	</body>
+</html>
