@@ -1,0 +1,39 @@
+<!-- Selecting by Class
+We don't have to limit ourselves to selecting HTML elements like <p> and <div>; essentially, we can put any CSS selector in quotes and pass it into $(). This means we can select classes, too!
+
+Recall that we can select classes in CSS by using a dot (.). If we have class="red" in our HTML, we can target it in CSS with .red. In jQuery, all we need to do is put '.red' in quotes, and we can pass it to $() to make a jQuery object.
+
+Instructions
+Let's get some practice with the .click() action.
+
+Finish the jQuery code so that it will make all four divs of class '.vanish' fadeOut() 'slow'ly when the button is .click()ed. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vanishing Act</title>
+		<style type="text/css">
+		.vanish {
+		    height: 100px;
+		    width: 100px;
+		    display: inline-block;
+		    background-color: #F38630;
+		    border-radius: 5px;
+		}
+		</style>
+        <script type='text/javascript'>
+        $(document).ready(function() {
+		    $('button').click(function() {
+		        $('.vanish').fadeOut('slow');
+		    });
+		});
+        </script>
+	</head>
+	<body>
+        <div class="vanish"></div>
+        <div class="vanish"></div>
+        <div class="vanish"></div>
+        <div class="vanish"></div>
+        <br/><button>Click Me!</button>
+	</body>
+</html>
