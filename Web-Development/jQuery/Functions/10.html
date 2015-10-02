@@ -1,0 +1,40 @@
+<!-- All right! Time to use our new jQuery knowledge to add another interactive component to our website: a sliding panel that moves up and down when clicked.
+
+We've set up the necessary HTML and CSS for you. Your assignment: animate it with jQuery.
+
+Instructions
+You know the drill! Turn document into a jQuery object and call the .ready() action. (No need to put anything in .ready()'s parentheses just yet.) -->
+
+
+<!-- Toggling Our Panel
+Perfect! Just one more step: we need to tell .click() what to do. In this case, when our pull tab is clicked, we want our sliding panel (with the class .panel) to open or close.
+
+The jQuery event we need to toggle our sliding panel is (you guessed it): .slideToggle()! We'll pass it one input, which is the speed of our slide animation.
+
+Instructions
+Inside .click()'s parentheses, create a .panel jQuery object and call the .slideToggle() effect. Give it the input 'slow' for the animation speed. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide Panel</title>
+        <link rel="stylesheet" type="text/css" href="10.css"></link>
+        <script type="text/javascript">
+        $(document).ready(function() {
+			$('.pull-me').click(function() {
+				$('.panel').slideToggle('slow');
+			});
+		});
+
+        </script>
+        
+    </head>
+    <body>
+        <div class="panel">
+        <br />
+        <br />
+        <p>Now you see me!</p>
+        </div>
+        <p class="slide"><div class="pull-me">Slide Up/Down</div></p>
+    </body>
+</html>
