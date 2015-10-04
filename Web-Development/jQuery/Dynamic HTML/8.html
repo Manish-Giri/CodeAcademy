@@ -1,0 +1,42 @@
+<!-- Changing Your Style
+What if we want to fine-tune individual CSS property values, though? Remember style="height:300px; width:300px;"? jQuery makes it a snap!
+
+Because resizing elements is so common, jQuery has specific .height() and .width() functions that can be used to change the heights and widths of HTML elements. For instance:
+
+    $("div").height("100px");
+    $("div").width("50px");
+would give all <div>s on the page a height of 100 pixels and a width of 50 pixels.
+
+jQuery also includes a general-purpose .css() function that takes two inputs: the first is the CSS element to alter, and the second is the value to set it to. For example:
+
+    $("div").css("background-color","#008800");
+would give all <div>s on the page a green background color. You can modify any element's CSS attributes this way.
+
+Instructions
+Let's get some practice in. Change the <div> in our HTML document so it has a height of 200 pixels, a width of 200 pixels, and a border-radius of 10 pixels. Let's make this happen immediately, without the need for a click. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result</title>
+        <style type="text/css">
+	        div {
+			    height: 50px;
+			    width: 300px;
+			    border-radius:0;
+			    background-color: #2C7CC3;
+			}
+        </style>
+        <script type='text/javascript'>
+        	$(document).ready(function() {
+			    $("div").height("200px");
+						$("div").width("200px");
+						$("div").css("border-radius", "10px");
+				});
+			        
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
