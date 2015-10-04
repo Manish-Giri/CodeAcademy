@@ -1,0 +1,41 @@
+<!-- Moving Elements Around
+Moving elements around in the DOM is a snap—all we need to do is use the jQuery functions we just learned on existing elements instead of creating new ones.
+
+var $paragraph = $("p"); // existing element
+$("div").after($paragraph); // Move it!
+// Same as:
+$("div").after($("p"));
+We can select an element using $("p") and assign it to a variable
+We can move the position in the DOM by using the variable in our after() statement
+Note: This does not copy the element from one location to another, it moves the original element effectively saving you from having to delete the original
+
+Instructions
+In script.js, add a new line below your code to move your <p> tag after the <div> with id #one
+create a new jQuery selector that targets the <div> with the id #two
+Using after again, select the <p> tag you created and move it after the <div> with id #two -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result</title>
+        <script type='text/javascript'>
+
+       $(document).ready(function() {
+		    $("#one").after("<p>Paragraph after Div 1</p>");
+		    
+		    $para = $("p");
+		    
+		    $("#two").after($para);
+		    
+		})
+
+        </script>
+	</head>
+	<body>
+        <div class="container">
+            <h2>Greetings</h2>
+            <div id="one">Div #1</div>
+            <div id="two">Div #2</div>
+        </div>   
+	</body>
+</html>
