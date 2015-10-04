@@ -1,0 +1,24 @@
+<!-- Creating HTML Elements
+Dynamically adding elements to our HTML page is a powerful tool—it lets us modify not only the formatting, but the actual structure of our websites in response to a user's actions. For example, when you get a Gchat, each message is actually a new <div> being dynamically added to the page. Cool, right?
+
+If you think about it, we've sort of done this already: all we're doing is setting a variable equal to a jQuery object. In this case, however, instead of just having something like:
+
+$p = $('p');
+We'll want to pass in an entire HTML element in quotes:
+
+$p = $("<p>I'm a new paragraph!</p>");
+When we put text in quotes like this, we call it a string (as in a "string of characters"). From now on, when we say "string," you can think "text" or "phrase." Strings are always in single or double quotes.
+
+Instructions
+In script.js, create a variable, $h1, and set it equal to a jQuery object containing an <h1> tag with the text "Hello". The tag should be a string. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Result</title>
+        <script type='text/javascript' src='script.js'>
+        $h1 = $('<h1>Hello</h1>');
+        </script>
+	</head>
+	<body></body>
+</html>
