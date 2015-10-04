@@ -1,0 +1,30 @@
+<!-- Adding and Removing Classes
+We don't have to limit ourselves to adding or removing entire elements, though—we can fine-tune our jQuery superpowers to alter classes, CSS, and even the contents of our HTML elements.
+
+Let's start with classes. jQuery includes two functions, .addClass() and .removeClass(), that can be used to add or remove a class from an element. This is great if, for example, you have a highlighted class that you want to apply to an element when clicked.
+
+The syntax looks like this:
+
+$('selector').addClass('className');
+$('selector').removeClass('className');
+where 'selector' is the HTML element you want and 'className' is the class name you want to add or remove.
+
+Remember: You aren't selecting anything, you are modifying your element. This means that you do not need # or . before your class.
+
+Instructions
+Now that we think of it, that highlighted class seems like a great idea. We've supplied the HTML and CSS; in the script.js tab, add the jQuery code necessary to make your #text div highlighted when clicked!
+
+MAKE SURE to click "Submit," and THEN click "Highlight me, too!" to see the results. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Highlights</title>
+        <link rel='stylesheet' type='text/css' href='6.css'/>
+        <script type='text/javascript' src='6.js'></script>
+	</head>
+	<body>
+        <div id="title" class="highlighted">I'm highlighted!</div>
+        <div id="text">Highlight me, too!</div>
+	</body>
+</html>
