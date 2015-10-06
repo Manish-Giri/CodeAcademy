@@ -1,0 +1,69 @@
+<!-- Set Up
+All right! It's time to apply our newfound knowledge. In this section, we'll build an interactive "to do" list that will add items to a checklist and remove them as they're checked off.
+
+We've provided the necessary HTML and CSS; you'll provide the jQuery.
+
+Instructions
+You know the drill. Get your document .ready()! -->
+
+<!-- Click Da Button! Do It Naoughw!
+You'll notice we've set up an HTML form for grabbing the user's input. We'll need to store the user's input in a variable, which will allow us to append that input to the body of the HTML document later on.
+
+You can set a variable equal to the contents of the input field using .val(), like so:
+
+//Get the value from an input
+var input = $('input[name=checkListItem]').val();
+Our selector finds our specific input using a css selector on our checkListItem input
+We call val() to get the value of the field
+Instructions
+Let's create a .click() event handler for our #button element
+Make sure you pass it a function(){}
+Inside your function(){} create the variable toAdd and set it equal to the contents of the input field.
+
+
+$(document).ready(function(){
+    $("#button").click(function(){
+        var toAdd = $("input[name=checkListItem]").val();
+    });
+
+});
+
+ -->
+
+<!--  Append to Body
+Perfect! Now we want to add our HTML element to the document. We can do this using our handy .append() function.
+
+Let's go ahead and append to our div with the .list class. We'll append a <div> with class="item", since we'll want a way to target our appended <div>s later when we remove them. (A "to do" list is no good if we can't check things off it.)
+
+We'll want the contents of our div to be the contents of our input field, which we saved in the variable toAdd. That means when we append, we'll want to append
+
+'<div class="item">' + toAdd + '</div>'
+Instructions
+Go ahead and .append() a <div> with class="item" to the .list div of your HTML document, then MAKE SURE to click your button to add an item—the exercise will wait for you to do so!
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="10.css"/>
+        <script type="text/javascript">
+
+        	$(document).ready(function(){
+			    $("#button").click(function(){
+			        var toAdd = $("input[name=checkListItem]").val();
+			        $(".list").append("<div class = 'item'>" + toAdd + "</div>");
+			    });
+
+			});
+        </script>
+	</head>
+	<body>
+		<h2>To Do</h2>
+		<form name="checkListForm">
+			<input type="text" name="checkListItem"/>
+		</form>
+		<div id="button">Add!</div>
+		<br/>
+		<div class="list"></div>
+	</body>
+</html>
