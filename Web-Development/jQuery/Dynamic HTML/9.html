@@ -1,0 +1,33 @@
+<!-- Modifying Content
+Finally, we can update the contents of our HTML elements—that is, the bit between the opening and closing tags—using the .html() and .val() functions.
+
+.html() can be used to set the contents of the first element match it finds. For instance,
+
+$('div').html();
+will get the HTML contents of the first div it finds, and
+
+$('div').html("I love jQuery!");
+will set the contents of the first div it finds to "I love jQuery!"
+
+.val() is used to get the value of form elements. For example,
+
+$('input:checkbox:checked').val();
+would get the value of the first checked checkbox that jQuery finds.
+
+Instructions
+We've added a paragraph to our HTML document. Use the .html() function to set its text to "jQuery magic in action!" (Don't forget the exclamation point!) -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result</title>
+        <script type='text/javascript' src='script.js'>
+        $(document).ready(function() {
+    $("p").html("jQuery magic in action!");
+})
+        </script>
+	</head>
+	<body>
+        <p>I'm about to change!</p>   
+	</body>
+</html>
