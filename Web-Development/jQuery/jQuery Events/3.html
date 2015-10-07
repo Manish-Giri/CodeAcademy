@@ -1,0 +1,23 @@
+<!-- Adding an Event Handler
+Great! Now let's review how to make something happen with an event handler. In this case, we'll use .click().
+
+Instructions
+Rewrite your jQuery code so that Krypton only fades out when you .click() on it. It should still fade out 'fast'! MAKE SURE to click Save & Submit Code, then click on Krypton. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Kapow!</title>
+        <link rel='stylesheet' type='text/css' href='2.css'/>
+        <script type='text/javascript'>
+        	$(document).ready(function(){
+			    $("div").click(function() {
+			        $(this).fadeOut("fast");
+			    });
+			});
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
