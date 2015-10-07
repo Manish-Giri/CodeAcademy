@@ -1,0 +1,35 @@
+<!-- Combining .click() and .hover()
+Well done! Let's add one more jQuery event to our "destruction of Krypton" simulation. Krypton didn't just vanish, it exploded! Let's make it turn red.
+
+$('div').hover(function(){
+  $('div').addClass('green');
+});
+Following the pattern we have been learning, we target Krypton, our $('div')
+We then apply our hover event to our target.
+Finally, we execute the code inside the function(){} which adds a class of green to our target.
+Instructions
+Below your .click() event code from the previous lesson, create a new selector $('div')
+Apply a hover event to this selector and have it add the class red to Krypton, our div
+Check out the example above! -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Kapow!</title>
+        <link rel='stylesheet' type='text/css' href='2.css'/>
+        <script type='text/javascript'>
+        	$(document).ready(function(){
+			    $("div").click(function() {
+			        $(this).fadeOut("fast");
+			    });
+			    
+			    $("div").hover(function() {
+			        $(this).addClass("red");
+			    });
+			});
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
