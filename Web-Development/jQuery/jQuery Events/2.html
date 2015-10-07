@@ -1,0 +1,23 @@
+<!-- Cutting to the Chase
+Let's quickly review how to trigger an effect without a special event handler like .click()—we just want our effect to happen as soon as our document is .ready().
+
+Remember: practice makes perfect!
+
+Instructions
+Your div represents the planet Krypton. Make it .fadeOut() 'fast'! (Go ahead and do this immediately, without the need for a click.) -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kapow!</title>
+        <link rel='stylesheet' type='text/css' href='2.css'/>
+        <script type='text/javascript'>
+        	$(document).ready(function(){
+			    $("div").fadeOut("fast");
+			});
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
