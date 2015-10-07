@@ -1,0 +1,58 @@
+<!-- Review of jQuery Events
+You know a lot about jQuery events already, but it never hurts to review the basics.
+
+The setup almost always looks like this:
+
+$(document).ready(function() {
+    $('thingToTouch').event(function() {
+        $('thingToAffect').effect();
+    });
+});
+where "thing to touch" is the HTML element you'll click on, hover over, or otherwise interact with, and "thing to affect" is the HTML element that fades away, changes size, or undergoes some other transformation.
+
+Sometimes these elements are one and the same—you might hover over a <div> to change its opacity. Other times, you might interact with a separate element; for example, you might click on a button to resize a <div>.
+
+Sometimes if you want an effect to occur right away, without an event like .click() or .hover(), you'll skip the second line in the above:
+
+$(document).ready(function() {
+    $('thingToAffect').effect();
+});
+Instructions
+Take a look at the code in script.js. Make sure you understand what it'll do! Click Save & Submit Code when you're ready to test your hypothesis. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Result</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <style type="text/css">
+        	form {
+			    font-size: 12px;
+			    font-family: Verdana, Arial, Sans-Serif;
+			    display: inline-block;
+			}
+			#messages {
+			    font-size: 14px;
+				font-family: Garamond, Times, Serif;
+			}
+
+        </style>
+        <script type='text/javascript'>
+
+        	$(document).ready(function() {
+			    $('button').click(function() {
+			    	var toAdd = $("input[name=message]").val();
+			        $('#messages').append("<p>"+toAdd+"</p>");
+			    });
+			});
+
+        </script>
+	</head>
+	<body>
+        <form>
+        MESSAGE: <input type="text" name="message" value="Type your text here!">
+        </form>
+        <button>Add!</button><br/>
+        <div id="messages"></div>
+	</body>
+</html>
