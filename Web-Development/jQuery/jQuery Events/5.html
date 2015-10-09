@@ -1,0 +1,35 @@
+<!-- The .dblclick() Event
+Now that we've reviewed our jQuery event handlers, let's learn a new one.
+
+We might want to cause a jQuery effect when a user double clicks on an element, rather than just single-clicking. We can do this with the .dblclick() event handler.
+
+Instructions
+Use the .dblclick() handler to make our 'div' .fadeOut()s 'fast'. Make sure to double-click on your div to see the effect! -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Dubba Click</title>
+       	<style type="text/css">
+
+       		div {
+			    height: 100px;
+			    width: 100px;
+			    border-radius: 5px;
+			    background-color: #ABCDEF;
+			}
+       	</style>
+        <script type='text/javascript'>
+
+        	$(document).ready(function() {
+			    $("div").dblclick(function(){
+			        $(this).fadeOut("fast");
+			    });
+			});
+			
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
