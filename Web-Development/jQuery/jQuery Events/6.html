@@ -1,0 +1,51 @@
+<!-- Hover
+What if you wanted to create an effect when your mouse is on top of an object, then have that effect vanish when your mouse moved away? You might notice this effect in use on many site's navigation bars!
+
+$('div').hover(
+    function(){
+      $(this).addClass('highlight');
+   },
+   function(){
+      $(this).removeClass('highlight');
+   }
+);
+We first select the element we want to modify $('div')
+Secondly notice that our hover effect is able to take two functions(){} separated by a comma. The comma is very important!
+The first function(){} we pass will be run when we first mouse over our target. Here we apply a class of highlight
+The second function(){} will be called when our mouse leaves the object. This is where we remove the class highlight
+Your second function(){} doesn't have to be the opposite of the first function(){}, but it would be very common!
+
+Instructions
+We're ready to apply a hover effect to our site's navigation bar
+
+In script.js use your selector to target our menu items
+When we hover over the menu item, let's apply a class of active
+When our mouse leaves the menu item, let's remove the active class -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ghostly Divs</title>
+        <link rel='stylesheet' type='text/css' href='6.css'/>
+        <script type='text/javascript' src='script.js'>
+
+        	$(document).ready(function(){
+
+			  $("div").hover(
+			    function(){
+			        $(this).addClass("active");
+			    },
+			    function(){
+			        $(this).removeClass("active");
+			    }
+			  );
+
+			});
+        </script>
+	</head>
+	<body>
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Contact</div>   
+	</body>
+</html>
