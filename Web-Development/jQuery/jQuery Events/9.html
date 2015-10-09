@@ -1,0 +1,35 @@
+<!-- Getting Ready
+Now that you've got a solid foundation in jQuery events and have covered important functions like .keydown() and .animate(), we'll put our newfound knowledge to work. In this section, we'll animate a sprite, or two-dimensional image on the screen.
+
+For this momentous event, we've chosen a familiar face. Check him out in the Result tab!
+
+Instructions
+Let's get started. First, get your document .ready(). -->
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Super Mario!</title>
+        
+        <style type="text/css">
+
+	        img {
+			    position: relative;
+			}
+		</style>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/mario.jpg"/>
+	</body>
+</html>
+
+<!-- Using .keydown()
+Good! Now we want to add a line of jQuery that will handle the keydown event.
+
+Instructions
+Inside your $(document).ready() setup, call the .keydown() event on $(document). Pass .keydown() a function(){} as an input. Here's the twist: your function should take a single input, key, which will help jQuery figure out which key was pressed. -->
+
+<!-- $(document).ready(function() {
+
+    $(document).keydown(function(key) {});
+}); -->
