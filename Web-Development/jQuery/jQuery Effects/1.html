@@ -1,0 +1,29 @@
+<!-- You Know This!
+You already know a lot about jQuery effects, so let's try a training wheels-free exercise. You can do this! We believe in you.
+
+Instructions
+Write the necessary jQuery code to .hide() your 'div' as soon as the HTML document is ready. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Vanishing Act</title>
+        <style type="text/css">
+        	div {
+			    height: 100px;
+			    width: 100px;
+			    border-radius: 100%;
+			    background-color: #ABCDEF;
+			}
+        </style>
+        <script type='text/javascript'>
+
+        	$(document).ready(function() {
+			    $("div").hide();
+			});
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
