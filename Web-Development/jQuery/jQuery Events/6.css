@@ -1,0 +1,14 @@
+div {
+    border-radius: 5px;
+    background-color: #ABCDEF;
+    transition: background-color 0.5s ease;
+    display:inline;
+    font-size:25px;
+    padding:20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+
+.active {
+    background-color:#556677;
+}
