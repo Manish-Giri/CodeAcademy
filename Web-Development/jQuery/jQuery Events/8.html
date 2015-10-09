@@ -1,0 +1,45 @@
+<!-- The .keydown() Event
+You're not limited to mouse events in jQuery—you can trigger events using the keyboard, as well!
+
+The .keydown() event is triggered whenever a key on the keyboard is pressed. It only works on whatever page element has focus, so you'll need to click on the window containing your div before pressing a key in order for you to see its effects.
+
+Let's go ahead and combine our new event with a new effect: .animate()! We'll use this to move an object on the screen whenever we press a key.
+
+The .animate() effect takes two inputs: the animation to perform, and the time in which to perform the animation. Here's an example:
+
+$(document).ready(function() {
+   $('div').animate({left:'+=10px'},500);
+});
+This will take the first div it finds and move it ten pixels to the right. Remember, increasing the distance from the left margin moves something to the right; the += bit is just a shorthand for "take the existing number and add ten to it." In this case, it add ten pixels to the current distance from the left margin.
+
+Instructions
+After setting up with $(document).ready(), call the .keydown() event on $(document). (We want the whole document object to respond whenever a key is pressed.)
+
+Inside your .keydown() handler, .animate() your 'div' with the same inputs as above: {left:'+=10px'} and 500. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Div Racer</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <style type="text/css">
+        	div {
+			    height: 50px;
+			    width: 50px;
+			    border-radius: 10px;
+			    background-color: #FF0000;
+			    position: relative;
+			}
+        </style>
+        <script type='text/javascript'>
+        	$(document).ready(function() {
+			    $(document).keydown(function() {
+			        $("div").animate({left: "+=10px"}, 500);
+			    });
+			});
+        </script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
