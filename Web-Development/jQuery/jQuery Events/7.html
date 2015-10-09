@@ -1,0 +1,40 @@
+<!-- Let's .focus()!
+Another event we can make use of is .focus(). We say an element has focus when we click on it or tab over to it. If you've ever filled out a form on a web page and seen how each text box lights up when you tab to it or click on it, you've seen focus in action!
+
+The .focus() event handler only works on elements that can receive focus—the list of these elements is a bit vague, but HTML elements like <textarea>s and <input>s are the usual suspects.
+
+Check out the form we've set up in the Result tab. If you click on the input field, you'll see it automatically highlights in a delightful baby blue. Too bad baby blue is for babies! We want our highlighting to be red.
+
+We can do this with two tools: .focus() and our .css() function from the last section. We want to write a bit of jQuery code that will change our 'input''s 'outline-color' to 'red' when it gains focus.
+
+Instructions
+In script.js, get your document .ready(). Do two things:
+
+Turn 'input' into a jQuery element and call the .focus() event handler on it.
+Inside your event handler function, call .css() on your 'input' element and pass it two inputs: the CSS element to change ('outline-color') and the color to change it to ('#FF0000').
+Not all browsers have equal CSS implementation. So for this lesson, if you are using Firefox, you will need to first change the outline-style to solid. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Time to Focus!</title>
+		<style type="text/css">
+			input {
+			    font-family: Verdana, Arial, Sans-Serif;
+			}
+		</style>
+		<script type='text/javascript'>
+
+			$(document).ready(function() {
+			    $("input").focus(function() {
+			        $("input").css("outline-color", "FF0000");
+			    });
+			});
+		</script>
+	</head>
+	<body>
+		<form>
+			Name: <input type='text' name='name'></input>
+		</form>
+	</body>
+</html>
