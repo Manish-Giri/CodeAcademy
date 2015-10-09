@@ -1,0 +1,38 @@
+<!-- More Practice with .animate()
+Let's get in a little more practice with the .animate() effect. That's the one with the slightly more complicated input—if we wanted to move a div 10 pixels down, we'd type something like
+
+$('div').animate({top:'+=10px'},500);
+Where the bit between curly braces says "hey, jQuery! Add 10 pixels to the current top margin," and the second input says "do it in 500 milliseconds!" (1,000 milliseconds = one second.)
+
+Instructions
+Going down? 
+1. Let's begin begin by targeting our image inside $()
+2. Then let's animate our image to go down by 100px
+3. Let's make it happen in 1 second or 1000 milliseconds -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Going Down</title>
+        <style type="text/css">
+
+        	body {
+			    margin: 0;
+			    padding: 0;
+			}
+			img {
+			    position: absolute;
+			}
+        </style>
+        <script type='text/javascript'>
+        	$(document).ready(function(){
+
+			    // Fill in the blanks!
+			    $("img").animate({ top: '+=100px'}, 1000);
+			});
+        </script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/elevator.png"/>   
+	</body>
+</html>
