@@ -1,0 +1,28 @@
+<!-- .bounce()
+Cool, right? But we can do much more than just blow things up.
+
+Another possible effect is 'bounce'. We give this as an input to .effect() just like 'explode', but we add an extra input to tell it how many times to bounce. This code will make our target 'div' bounce twice in 200 milliseconds:
+
+$('div').effect('bounce', {times:2}, 200);
+Instructions
+Change your 'explode' to a bounce, and make it so Krypton bounces three times in 500 milliseconds when you click on it. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Krypton Redux</title>
+		<link rel='stylesheet' type='text/css' href='3.css'/>
+        <script type='text/javascript'>
+
+			 $(document).ready(function() {
+			    $("div").click(function(){
+			        $(this).effect("bounce", {times: 3}, 500);
+			    });
+			});
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
