@@ -1,0 +1,13 @@
+<!-- .slide()
+We can also make Krypton .slide() into view. Not surprisingly, we do this by calling the .effect() effect and passing in 'slide' as an input.
+
+If you want to see everything jQuery UI can do, you can check out the documentation here!
+
+Instructions
+Go ahead and change your 'bounce' to a 'slide', and remove the other two inputs. -->
+
+$(document).ready(function() {
+    $("div").click(function(){
+        $(this).effect("slide");
+    });
+});
