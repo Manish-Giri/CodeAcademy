@@ -1,0 +1,31 @@
+<!-- Introducing: jQuery UI
+All right! Time to blaze new jQuery trails with a new jQuery library: jQuery UI.
+
+jQuery UI includes a number of ultra-fancy animations you can use to make your websites do incredible things.
+
+For instance, remember when we lamented that jQuery didn't include a .blowUp() effect for our planet Krypton? Well, that's still true. But jQuery UI has an .effect() effect, and we are totally going to give it the input 'explode'.
+
+Note that we've included an extra <script> tag in our HTML documents; this is used to include jQuery UI in our webpages. We don't have to do this with regular jQuery, since Codecademy automatically includes it for us.
+
+Instructions
+In the script.js tab, get your document .ready() and pass in a .click() event handler on your 'div'. Inside that, call .effect() on your div and give it the input 'explode'. Head over to the Result tab and click on Krypton to watch it explode! -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Krypton Redux</title>
+		<link rel='stylesheet' type='text/css' href='3.css'/>
+        <script type='text/javascript'>
+
+        	$(document).ready(function() {
+			    $("div").click(function(){
+			        $(this).effect("explode");
+			    });
+			});
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
