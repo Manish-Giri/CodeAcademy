@@ -1,0 +1,32 @@
+<!-- A Greater Selection
+Images and <div>s aren't the only elements we can target with jQuery UI—we can also enhance our ordered and unordered lists.
+
+Check out the HTML in index.html. We've set up a pretty nifty ordered list, but when it shows up in the Result tab, it's a little bland. With jQuery UI, we can fix that!
+
+Instructions
+In the script.js tab, get your document .ready() and call the .selectable() function on your 'ol'. Click Save & Submit Code, then click on the list items in your ordered list in the Result tab to see how much sleeker it looks. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Select Ye Favorite</title>
+        <link rel='stylesheet' type='text/css' href='9.css'/>
+        <script type='text/javascript'>
+        	$(document).ready(function() {
+			    $("ol").selectable();
+			});
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <ol>
+            <li>Super Mario Bros.</li>
+            <li>Tetris</li>
+            <li>Legend of Zelda: Link's Awakening</li>
+            <li>Kirby's Dream World</li>
+            <li>Burger Time</li>
+            <li>Pokémon Red</li>
+            <li>Pokémon Blue</li>
+        </ol>   
+	</body>
+</html>
