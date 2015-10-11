@@ -1,0 +1,30 @@
+<!-- Drag Racing
+jQuery UI includes a .draggable() function that can make any HTML element draggable—you can click on it and move it anywhere on the page!
+
+We thought you might be tired of <div> blocks, so we made you a CSS car. We worked super hard on it.
+
+Instructions
+Call the .draggable() function on '#car'. Click Save & Submit Code, then go to the Result tab and drag your car around the page! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+        <link rel='stylesheet' type='text/css' href='7.css'/>
+        <script type='text/javascript' src='script.js'>
+        	$(document).ready(function(){ 
+			    $("#car").draggable();
+			});
+			    
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div id="car">
+            <div id="top"></div>
+            <div id="bottom"></div>
+            <div id="fwheel"></div>
+            <div id="bwheel"></div>
+        </div>   
+	</body>
+</html>
