@@ -1,0 +1,35 @@
+#top {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #cc0000;
+    left: 25px;
+}
+#bottom {
+	position: relative;
+	height:25px;
+	width: 100px;
+	background-color: #cc0000;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	top: -25px;
+}
+#fwheel {
+	position: relative;
+	height:20px;
+	width:20px;
+	border-radius: 100%;
+	background-color: black;
+	top: -35px;
+	left: 5px;
+}
+#bwheel {
+	position: relative;
+	height:20px;
+	width:20px;
+	border-radius: 100%;
+	background-color: black;
+	top: -55px;
+	left: 75px;
+}
