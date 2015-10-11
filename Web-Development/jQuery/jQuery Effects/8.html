@@ -1,0 +1,33 @@
+<!-- One Resize Fits All
+You didn't love our mega sweet car? We slaved over that for months! Back to regular <div>s for you!
+
+(Just kidding. That little guy took us decades of hard work.)
+
+Instructions
+Call the .resizable() function on your 'div'. Click Save & Submit Code, then go to the Result tab and resize your <div> to your heart's content! -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+        <style type="text/css">
+        	div {
+			    height: 100px;
+			    background-color: #ABCDEF;
+			    font-family: Verdana, Arial, Sans-Serif;
+			    font-size: 1em;
+			    text-align: center;
+			}
+        </style>
+
+        <script type='text/javascript'>
+        	$(document).ready(function() {
+			    $("div").resizable();
+			});
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div>Resize Me!</div>   
+	</body>
+</html>
