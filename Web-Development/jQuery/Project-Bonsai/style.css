@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background: #ffe780;
+  margin-bottom: 40px;
+  padding: 10px 0;
+}
+
+.header img {
+  width: 90px;
+  margin: -10px 10px 0 0;
+}
+
+.header h1 {
+  margin: 0;
+  display: inline-block;
+}
+
+.meme {
+  position: relative;
+}
+
+.top-caption,
+.bottom-caption {
+  font-family: Impact, sans-serif;
+  color: #fff;
+  text-shadow: #000 0px 0px 6px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+}
+
+.top-caption {
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.bottom-caption {
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.tool h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.tool form label {
+  margin-bottom: 10px;
+
+}
+
+.tool input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 5px solid #ff7171;
+  box-shadow: none;
+}
+
+input[type="text"]:focus {
+  border: 0;
+  border-bottom: 5px solid #ff7171;
+  outline: 0;
+  box-shadow: none;
+}
