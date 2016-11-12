@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+.header .logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin: 0;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.dropdown,
+.logo {
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    border-radius:0px;
+    box-shadow:none;
+    border:none;
+    min-width: 200px;
+    top: 28px;
+    background-color: #000;
+}
+
+.dropdown-menu li {
+    margin-left: 0;
+    float:none;
+}
+
+.dropdown-menu li a {
+    color:#fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.dropdown-menu li a:hover {
+    background-color:#ffff00;
+    color:#000;
+}
+
+.main {
+    position: relative;
+    top: 80px;
+}
+
+.main h1 {
+    background-color:rgba(255,255,0,0.5);
+    display:inline;
+    color: #000;
+    font-size:170px;
+    line-height:150px;
+    text-transform: lowercase;
+}
+
+.main h2 {
+    font-size: 60px;
+    margin: 40px 0;
+}
+
+.main .btn {
+    border-radius: 0px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.main .btn-default {
+    background-color: rgba(255,255,255,0.5);
+    padding: 16px 26px;
+}
+
+@media (max-width: 800px) {
+    .main h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+}
