@@ -1,0 +1,183 @@
+html, body {
+    margin: 0;
+}
+
+h1, h2, a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* Main */
+.main {
+    text-align: center;
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/2/move/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+}
+
+.main .container {
+    position: relative;
+    top: 100px;
+}
+
+.main h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 200px;
+}
+
+.main p {
+    color: #fff;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.main .btn {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Supporting */
+.supporting {
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 50px 0 80px;
+}
+
+.supporting .col {
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+.supporting h2 {
+    color: #ffa800;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.supporting p {
+    color: #efefef;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.supporting .btn {
+    background-color: #eee;
+    color: #1c1c1c;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Feature */
+.feature {
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/2/move/feature.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.feature .container {
+    position: relative;
+    top: 200px;
+}
+
+.feature h2 {
+    color: #fff;
+    font-size: 60px;
+    margin:0;
+    padding:50px 0 0;
+
+}
+
+/* Footer */
+.footer {
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/2/move/footer.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer .container {
+    position: relative;
+    top: 200px;
+}
+
+.footer h2 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    padding:50px 0 0;
+}
+
+.footer p {
+    color: #fff;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.footer .btn {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.btn:hover {
+    background:#ffa800;
+    color:#000;
+}
+
+ul.ui-autocomplete {
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+}
+
+ul.ui-autocomplete li {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+ul.ui-autocomplete li:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 700px) {
+    .main h1 {
+        font-size: 110px;
+    }
+    .supporting .col {
+        width: 92%;
+    }
+}
