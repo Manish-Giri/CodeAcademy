@@ -173,6 +173,14 @@ ul.ui-autocomplete li:hover {
     background-color: #ddd;
 }
 
+#start {
+    width: 240px;
+    height: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
 @media (max-width: 700px) {
     .main h1 {
         font-size: 110px;
