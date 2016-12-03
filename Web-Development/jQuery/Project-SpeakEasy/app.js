@@ -25,6 +25,21 @@ var main = function() {
         $(this).parent().remove();
     });
 
+    function add(item) {
+        var html = template(item);
+        $(".list").append(html);
+
+    }
+    var command = {
+        'add *item': add
+    };
+
+    // Add our commands to annyang
+    annyang.addCommands(command);
+
+    // Start listening
+    annyang.start();
+
 };
 
 $(document).ready(main);
