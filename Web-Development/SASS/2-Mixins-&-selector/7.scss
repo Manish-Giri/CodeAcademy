@@ -1,0 +1,148 @@
+/*
+In Sass, string interpolation is the process of placing a variable string in the middle of two other strings.
+
+In a mixin context, interpolation is handy when you want to make use of variables in selectors or file names. The notation is as follows:
+
+@mixin photo-content($file) {
+  content: url(#{$file}.jpg); //string interpolation
+  object-fit: cover;
+}
+
+//....
+
+.photo {
+  @include photo-content('titanosaur');
+  width: 60%;
+  margin: 0px auto;
+  }
+String interpolation would enable the following CSS:
+
+.photo {
+  content: url(titanosaur.jpg);
+  width: 60%;
+  margin: 0px auto;
+}
+1.
+In main.scss, edit the photo-content mixin as follows:
+
+@mixin photo-content($file) {
+  content: url(#{$file}.jpg);
+  object-fit: cover;
+}
+Include the mixin inside the .photo selector and pass in a file name of 'titanosaur':
+
+.photo {
+        @include photo-content('titanosaur');
+        width: 60%;
+        margin: 0px auto;
+ }
+Click "Run" to see your changes in the browser and inspect them in the output of main.css.
+ */
+
+
+$stripe-properties: to bottom, 15%, blue, white;
+@mixin stripes($direction, $width-percent, $stripe-color, $stripe-background: #FFF) {
+  background: repeating-linear-gradient(
+                  $direction,
+                  $stripe-background,
+                  $stripe-background ($width-percent - 1),
+                  $stripe-color 1%,
+                  $stripe-background $width-percent
+  );
+}
+
+@mixin transform($transformation) {
+  transform: $transformation;
+  -webkit-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  -o-transform: $transformation;
+}
+
+@mixin photo-content($file) {
+  content: url(#{$file}.jpg);
+  object-fit: cover;
+}
+
+//Add your own mixins here
+@mixin backface-visibility($visibility: hidden) { //Add an argument
+  backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -ms-backface-visibility: $visibility;
+  -o-backface-visibility: $visibility;
+}
+
+@mixin transform-style($style){
+  transform-style: $style;
+  -moz-transform-style: $style;
+  -o-transform-style: $style;
+  -ms-transform-style: $style;
+  -webkit-transform-style: $style;
+}
+
+@mixin transition($time){
+  transition: $time;
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+}
+
+.notecard {
+  width: 300px;
+  height: 180px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,.2);
+  @include transform-style(preserve-3d);
+  @include transition(0.4s);
+
+  &:hover{
+    @include transform (rotatey(-180deg));
+
+  }
+
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include backface-visibility;
+  }
+
+  .front {
+    z-index: 3;
+    font-size: 20px;
+
+    .word {
+      display: block;
+      text-align: center;
+      position: relative;
+      top: 40%;
+    }
+  }
+
+
+  .back {
+    z-index: 1;
+    word-wrap: break-word;
+    line-height: 1.6;
+    @include transform(rotatey(-180deg));
+    .definition {
+      width: 100%;
+      height: 100%;
+
+      .photo {
+        @include photo-content('titanosaur');
+        width: 60%;
+        margin: 0px auto;
+
+      }
+    }
+  }
+}
+
+.definition {
+  @include stripes($stripe-properties...);
+}
