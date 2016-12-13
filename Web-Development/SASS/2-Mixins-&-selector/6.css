@@ -1,0 +1,102 @@
+/*
+Sass allows you to pass in multiple arguments in a list or a map format.
+
+For example, take the multiple properties needed to create the college-ruled stripes in the back of our notecard.
+
+@mixin stripes($direction, $width-percent, $stripe-color, $stripe-background: #FFF) {
+  background: repeating-linear-gradient(
+    $direction,
+    $stripe-background,
+    $stripe-background ($width-percent - 1),
+    $stripe-color 1%,
+    $stripe-background $width-percent
+  );
+}
+In this scenario, it makes sense to create a map with these properties in case we ever want to update or reference them.
+
+$college-ruled-style: (
+    direction: to bottom,
+    width-percent: 15%,
+    stripe-color: blue,
+    stripe-background: white
+);
+When we include our mixin, we can then pass in these arguments in a map with the following ... notation:
+
+.definition {
+      width: 100%;
+      height: 100%;
+      @include stripes($college-ruled-style...);
+ }
+Note: Remember to always prioritize readability over writing less code. This approach is only useful if you find it adds clarity to your codebase.
+1.
+At the top of main.scss, make a new list variable:
+
+$stripe-properties: to bottom, 15%, blue, white;
+Include the stripes mixin inside of the .definition selector:
+
+.definition {
+    @include stripes($stripe-properties...);
+  }
+Click "Run" to see your changes in the browser and inspect them in the output of main.css.
+
+ */
+.notecard {
+  width: 300px;
+  height: 180px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s; }
+  .notecard:hover {
+    transform: rotatey(-180deg);
+    -webkit-transform: rotatey(-180deg);
+    -moz-transform: rotatey(-180deg);
+    -ms-transform: rotatey(-180deg);
+    -o-transform: rotatey(-180deg); }
+  .notecard .front, .notecard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden; }
+  .notecard .front {
+    z-index: 3;
+    font-size: 20px; }
+    .notecard .front .word {
+      display: block;
+      text-align: center;
+      position: relative;
+      top: 40%; }
+  .notecard .back {
+    z-index: 1;
+    word-wrap: break-word;
+    line-height: 1.6;
+    transform: rotatey(-180deg);
+    -webkit-transform: rotatey(-180deg);
+    -moz-transform: rotatey(-180deg);
+    -ms-transform: rotatey(-180deg);
+    -o-transform: rotatey(-180deg); }
+    .notecard .back .definition {
+      width: 100%;
+      height: 100%; }
+      .notecard .back .definition .photo {
+        width: 60%;
+        margin: 0px auto; }
+
+.definition {
+  background: repeating-linear-gradient(to bottom, white, white 14%, blue 1%, white 15%); }
+
+/*# sourceMappingURL=6.css.map */
